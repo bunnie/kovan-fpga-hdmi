@@ -1254,15 +1254,12 @@ module kovan (
 
 		      /// extened version -- 32 bits to report versions
 		      /// kovan starts at FF.00.01.00.01
-		      .reg_fc(8'h8),  // this is the LSB of the extended version field
+		      .reg_fc(8'h7),  // this is the LSB of the extended version field
 		      .reg_fd(8'h0),
 		      .reg_fe(8'h1),
 		      .reg_ff(8'h0)   // this is the MSB of the extended version field
 		      );
 
-   /////// version FF.0001.0008 (log created 2/11/2013)
-   //
-   
    /////// version FF.0001.0007 (log created 7/30/2012)
    // - Adding HDMI capability
    //   HDMI is now passively emitted out of the HDMI Tx port. It does pixel and line
